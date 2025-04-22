@@ -1,0 +1,52 @@
+footer{
+    background-color: #096C25;
+
+    h5{
+        @include text-style(700,18px,24px,0%);
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        color: $light-grey;
+    }
+    .row
+    {
+        padding-top: 80px;
+        margin-top: 80px;
+        margin-bottom: 48px;
+
+        @media (max-width: 425px){
+            padding-top: 50px;
+            margin-top: 50px;
+            margin-bottom: 28px;
+        }
+    }
+    .nav-item
+    {
+        .nav-link
+        {
+            @include text-style(400,16px,26px,0%);
+            color: $light-grey;
+            margin-top: 8px;
+        }
+
+        .fa-facebook-f ,.fa-instagram ,.fa-x-twitter, .fa-linkedin-in
+        {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $light-grey;
+            color: #096C25;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+    .footer-text
+    {
+        text-align: center;
+        @include text-style(400,14px,27px,0%);
+        margin-bottom: 24px;
+        color: #FDFEFD;
+    }
+}

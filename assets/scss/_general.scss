@@ -1,0 +1,132 @@
+// General Style
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden !important;
+}
+html{
+	overflow-x: hidden !important;
+}
+/* COMMON DESIGN START */
+
+a {
+	text-decoration: none;
+	transition: 0.5s all ease;
+ 	&:hover {
+ 		text-decoration: none;
+	}
+}
+h1, h2, h3, h4, h5, h6, p, ul li {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ol {
+	margin: 0;
+	padding: 0;
+ li {
+ list-style-position: inside;
+}
+}
+/* COMMON DESIGN END */
+
+.container {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn1
+{
+	@include text-style(500,18px,28px,0%);
+	color: #FDFEFD;
+	padding: 8px 20px;
+	background: linear-gradient(180deg, #0F8732 0%, #0FB03E 100%);
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
+	outline: none;
+
+	&:hover {
+		background: #ffffff;
+		color: #0F8732;
+		border: 1px solid #0FB03E;
+	  }	  
+	
+	@media (max-width:594px)
+	{
+		padding: 6px 16px;
+		@include text-style(400,15px,28px,0%);
+	}
+}
+
+.description
+{
+	@include text-style(400,18px,30px,0%);
+	color: $gray;
+
+	@media (max-width:594px)
+	{
+		@include text-style(400,13px,20px,0%);
+	}
+
+	@media (max-width:425px){
+		@include text-style(400,10px,17px,0%);
+	}
+}
+
+.container
+{
+	.heading
+	{
+		text-align: center;
+		text-transform: capitalize;
+		@include text-style(700,48px,64px,0%);
+		padding-top: 60px;
+
+		span{
+			color: $light-green;
+		}
+
+		@media #{$brkmx768}{
+			@include text-style(700,36px,56px,0%);
+			padding-top: 0px;
+		}
+
+		@media (max-width: 425px)
+		{
+			@include text-style(700,30px,37px,0%);
+		}
+	}
+}
+
+.bg-text
+{
+	padding: 12px 24px;
+	border-radius: 25px;
+	background-color: #E9F5EC;
+	color: $gray;
+	display: inline;
+	@include text-style(600,16px,26px,0%);
+	text-transform: uppercase;
+}
+
