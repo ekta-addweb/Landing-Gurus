@@ -245,8 +245,8 @@
 
 .advantage
 {
+    background-color: #F5FAF6;
     .container{
-        background-color: #F5FAF6;
         padding-top: 80px;
 
         .heading{
@@ -466,7 +466,7 @@
             .faqs-left
             {
                 text-align: left;
-                flex-basis: 500px;
+                flex-basis: 450px;
 
                 .heading
                 {
@@ -486,7 +486,7 @@
 
             .faqs-right
             {
-                flex-basis: 750px;
+                flex-basis: 700px;
 
                 .accordion-item
                 {
@@ -557,13 +557,27 @@
 
 .freedom
 {
+     background-color: #F5FAF6;
+     padding: 80px 0;
+
+     @media (max-width :1024px)
+     {
+        background-color: transparent;
+        padding: 50px 0;
+
+     }
+
+     @media (max-width : 425px)
+     {
+        padding: 20px 0;
+     }
     .container{
         background: url('../../../assets/images/freedom-bg.png') no-repeat;
         height: 100%;
         width: 100%;
         position: relative;
         z-index: 9999;
-    
+        
         &::after
         {
             content: "";

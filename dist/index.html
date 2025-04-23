@@ -14,12 +14,14 @@
       <!--fonts-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
       <!--swiper js-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--font awesome-->
    </head>
    <body>
       <div class="header-hero">
          <!--header start-->
          <div class="container">
-            <header>
+            <header class="m-0">
               <nav class="navbar navbar-expand-lg d-flex flex-wrap w-100 m-0 p-0">
                 <a href="/" class="navbar-brand m-0 p-0">
                   <img src="assets/images/logo.svg" alt="Logo">
@@ -224,10 +226,270 @@
             <p class="bg-text"> Feattures</p>
             <h2 class="heading">Our Standout <span> Features for Financing</span></h2>
             <p class="description"> Discover the essential features that make our lending solutions uniquely suited to empower your business</p>
+
+          <!-- Nav tabs -->
+          <!-- Scrollable wrapper -->
+          <div class="tab-scroll-wrapper">
+            <ul class="nav justify-content-start flex-nowrap" id="loanTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="term-tab" data-bs-toggle="tab" data-bs-target="#term" type="button" role="tab" aria-controls="term" aria-selected="true">Term Loans</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="online-tab" data-bs-toggle="tab" data-bs-target="#online" type="button" role="tab" aria-controls="online" aria-selected="false">Online Applications</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="rapid-tab" data-bs-toggle="tab" data-bs-target="#rapid" type="button" role="tab" aria-controls="rapid" aria-selected="false">Rapid Disbursement</button>
+              </li>
+            </ul>
+          </div>
+
+
+          <!-- Tab content -->
+          <div class="tab-content mt-4" id="loanTabsContent">
+            <div class="tab-pane fade show active" id="term" role="tabpanel" aria-labelledby="term-tab">
+              <div class="fea-row d-flex flex-wrap">
+                <div class="fea-left">
+                  <h2>Flexible Term Loans to Empower Growth</h2>
+                  <p class="description py-3">Fixed-rate loans with set repayment schedules, often used for business expansion, equipment purchases, or working capital.</p>
+                  <p class="description right-tik">Fixed Interest Rates: Enjoy predictable, fixed interest rates throughout the life of your loan, allowing you to budget with confidence.</p>
+                  <p class="description right-tik">Flexible Loan Amounts: Borrow exactly what you need, with loan amounts tailored to your business's specific requirements.
+                  </p>
+                </div>
+                <div class="fea-right">
+                  <img src="assets/images/features-img.svg" alt="features-img">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
+              <div class="fea-row d-flex flex-wrap">
+                <div class="fea-left">
+                  <h2>Online Application Loans to Empower Growth</h2>
+                  <p class="description py-3">Fixed-rate loans with set repayment schedules, often used for business expansion, equipment purchases, or working capital.</p>
+                  <p class="description right-tik">Fixed Interest Rates: Enjoy predictable, fixed interest rates throughout the life of your loan, allowing you to budget with confidence.</p>
+                  <p class="description right-tik">Flexible Loan Amounts: Borrow exactly what you need, with loan amounts tailored to your business's specific requirements.
+                  </p>
+                </div>
+                <div class="fea-right">
+                  <img src="assets/images/features-img.svg" alt="features-img">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="rapid" role="tabpanel" aria-labelledby="rapid-tab">
+              <div class="fea-row d-flex flex-wrap">
+                <div class="fea-left">
+                  <h2>Rapid Loans to Empower Growth</h2>
+                  <p class="description py-3">Fixed-rate loans with set repayment schedules, often used for business expansion, equipment purchases, or working capital.</p>
+                  <p class="description right-tik">Fixed Interest Rates: Enjoy predictable, fixed interest rates throughout the life of your loan, allowing you to budget with confidence.</p>
+                  <p class="description right-tik">Flexible Loan Amounts: Borrow exactly what you need, with loan amounts tailored to your business's specific requirements.
+                  </p>
+                </div>
+                <div class="fea-right">
+                  <img src="assets/images/features-img.svg" alt="features-img">
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
          </section>
          <!--Features end-->
 
+         <!--Faqs start-->
+         <section class="faqs">
+          <div class="container">
+            <div class="faqs-row d-flex flex-wrap">
+              <div class="faqs-left">
+                <p class="bg-text">FAQS</p>
+                <h2 class="heading">Frequently Asked <span>Questions</span></h2>
+                <p class="description">"We know that navigating financial decisions can be complex. That’s why we’ve compiled answers to the most common questions our clients ask. If you need more information, our team is always here to help."</p>
+              </div>
+              <div class="faqs-right">
+                <div class="accordion" id="accordionExample">
+
+                  <!--col1-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What types of loans do you offer?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">We offer a variety of loans, including personal, auto, home, and business loans, each tailored to fit your specific needs.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--col2-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I apply for a loan?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">We offer a variety of loans, including personal, auto, home, and business loans, each tailored to fit your specific needs.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- col3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        What documents do I need to provide for a loan application?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">Generally, you’ll need proof of identity, income documents, and address verification. Additional documents may be requested depending on your loan type.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- col4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        How long does it take to get approved?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">Approval times vary, but most applications are processed within 24 to 48 hours.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- col5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        What interest rates do you offer?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">No, we do not charge any penalties for early loan repayment. You’re free to pay off your loan early at any time.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- col6 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        Can I repay my loan early?
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-0">
+                        <p class="description">Yes, you can log into your account on our website or mobile app to view your loan status, payment history, and more.</p>
+                      </div>
+                    </div>
+                  </div>
+       
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+         <!--Faqs end-->
+
+         <!--freedom start-->
+         <section class="freedom">
+          <div class="container">
+            <div class="freedom-row d-flex flex-wrap justify-content-between">
+              <div class="freedom-left px-3 py-3">
+                <h2>Take the Next Step Toward Financial Freedom</h2>
+                <p class="description">Whether you're looking to secure a loan, invest wisely, or simply take control of your finances, we’re here to help. Don’t wait—your financial future begins with a single step.</p>
+                <button type="button" class="btn1">Apply Now</button>
+              </div>
+              <div class="freedom-right">
+                <img class="freedom-img" src="assets/images/freedom-img.svg" alt="freedom-img">
+              </div>
+            </div>
+          </div>
+         </section>
+         <!--freedom end-->
+
+         <!--footer start-->
+         <footer>
+          <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+              <div class="col mb-3">
+                <img src="assets/images/footer-logo.svg" alt="logo" width="100%">
+              </div>
+          
+              <div class="col mb-3">
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Loans</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Unsecured Working Capital</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">SBA Loans</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Lines Of credits</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Resources</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parners</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Company</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">How Its Work</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div class="col mb-3">
+                <h5>Follow Us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-x-twitter"></i> X</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+                </ul>
+              </div>
+            </footer>
+
+            <p class="footer-text">Lending Guru’s are a trusted partner in exploring business financing options. We offer valuable insights and connect you with potential lenders. However, the financial landscape is constantly changing, so we cannot guarantee the absolute accuracy or completeness of the information we provide</p>
+            <p class="footer-text">Please conduct your own research and seek professional advice before making any financial decisions. By using our website and services, you agree to our terms of service and understand that you are solely responsible for any decisions made based on information found here.</p>
+
+            <div class="container">
+              <div class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <span class="mb-3 mb-md-0 footer-text">© 2024 lending Gurus</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex gap-4">
+                  <li class=""><a class="footer-text" href="#">Privacy Policy</a></li>
+                  <li class=""><a class="footer-text" href="#">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </footer>
+         <!--footer end-->
 
 
 

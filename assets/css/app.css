@@ -10951,6 +10951,14 @@ header .navbar-nav .nav-item {
   line-height: 20px;
   letter-spacing: 0%;
 }
+header .navbar-nav .nav-item .nav-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+  background: linear-gradient(180deg, #0F8732 0%, #0FB03E 100%);
+  color: white;
+  border-radius: 10px;
+}
 
 footer {
   background-color: #096C25;
@@ -10967,13 +10975,11 @@ footer h5, footer .h5 {
 }
 footer .row {
   padding-top: 80px;
-  margin-top: 80px;
   margin-bottom: 48px;
 }
 @media (max-width: 425px) {
   footer .row {
     padding-top: 50px;
-    margin-top: 50px;
     margin-bottom: 28px;
   }
 }
@@ -11238,8 +11244,10 @@ footer .footer-text {
 }
 
 /*advantage style*/
-.advantage .container {
+.advantage {
   background-color: #F5FAF6;
+}
+.advantage .container {
   padding-top: 80px;
 }
 .advantage .container .heading {
@@ -11450,7 +11458,7 @@ footer .footer-text {
 }
 .faqs .container .faqs-row .faqs-left {
   text-align: left;
-  flex-basis: 500px;
+  flex-basis: 450px;
 }
 .faqs .container .faqs-row .faqs-left .heading {
   text-align: left;
@@ -11466,7 +11474,7 @@ footer .footer-text {
   }
 }
 .faqs .container .faqs-row .faqs-right {
-  flex-basis: 750px;
+  flex-basis: 700px;
 }
 .faqs .container .faqs-row .faqs-right .accordion-item {
   border: 1px solid rgba(0, 148, 44, 0.1);
@@ -11526,6 +11534,21 @@ footer .footer-text {
   }
 }
 
+.freedom {
+  background-color: #F5FAF6;
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .freedom {
+    background-color: transparent;
+    padding: 50px 0;
+  }
+}
+@media (max-width: 425px) {
+  .freedom {
+    padding: 20px 0;
+  }
+}
 .freedom .container {
   background: url("../../../assets/images/freedom-bg.png") no-repeat;
   height: 100%;
