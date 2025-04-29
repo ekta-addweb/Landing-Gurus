@@ -16,30 +16,28 @@
     }
 }
 
-/*Hero style*/
-.hero
+/*Hero section style*/
+.hero-section
 {
     .container{
-        // border-bottom: 1px solid $gray;
+        // *{
+        //     border: 2px solid black;
+        // }
         .hero-row{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             align-items: center;
-            padding-top: 80px;
-            padding-bottom: 80px;
 
             @media (max-width: 1163px)
             {
                 justify-content: center;
-                padding-top: 00px;
-                padding-bottom: 20px;
                 gap: 30px;
             }
             .hero-left{
                 max-width: 590px;
                 width: 100%;
-                padding-top: 31px;
+                padding: 31px 0;
                 z-index: 100;
 
                 @media (max-width: 1163px)
@@ -131,25 +129,8 @@
 
 /*company style*/
 
-.company
+.company-slider-section
 {
-    // .container
-    // {
-    //     // border-bottom: 1px solid $gray;
-    // }
-    .heading
-    {
-        padding-bottom: 42px;
-    }
-    .swiper
-    {
-        margin-bottom: 80px;
-
-        @media #{$brkmx768}{
-            margin-bottom: 50px;
-        }
-    }
-
     .swiper-slide img {
         filter: grayscale(100%);
         transition: filter 0.2s ease-in-out;
@@ -162,35 +143,14 @@
 
 /*services style*/
 
-.services
+.services-card-section
 {
-    margin-top: 160px;
-
-    @media #{$brkmx768}{
-        margin-top: 40px;
-    }
     .container{
-
-        .heading{
-            padding-top: 24px;
-        }
-        .description
-        {
-            margin-top: 16px;
-        }
-
         .ser-row 
         {
             gap: 24px;
             justify-content: center;
-            margin-top: 64px;
-            margin-bottom: 80px;
 
-            @media #{$brkmx768}
-            {
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
             .ser-col
             {
                 flex-basis: 400px;
@@ -201,18 +161,19 @@
                 border: 3px solid hsla(138, 81%, 31%, 0.10);
                 border-radius: 20px;
                 transition: transform 0.3s ease;
-                img{
-                    margin-bottom: 32px;
+                img
+                {
+                    margin-bottom: 24px;
                 }
 
-                h3{
+                .card-title{
                     @include text-style(600,30px,48px,0%);
-                    margin-bottom: 16px;
                     height: 96px;
+                    margin-bottom: 16px;
 
                     @media (max-width: 425px)
                     {
-                    @include text-style(600,20px,23px,0%);
+                        @include text-style(600,20px,23px,0%);
                         height: 30px;
                     }
                 }
@@ -222,7 +183,7 @@
                     margin-bottom: 30px;
                 }
 
-                .btn1{
+                .btn-green{
                     padding: 16px 24px;
 
                     @media (max-width:594px)
@@ -243,64 +204,59 @@
 
 /*advantage style*/
 
-.advantage
+.unique-advantage-section
 {
     background-color: #F5FAF6;
-    .container{
-        padding-top: 80px;
 
-        .heading{
-            padding-top: 24px;
-        }
-        .bg-text{
+    .container{
+
+        .bg-text
+        {
             background-color: #FDFEFD;
         }
 
-        .adv-row
+        .advantage-row
         {
             justify-content: space-around;
             align-items: center;
-            gap: 24px;
-            margin-top: 80px;
-            margin-bottom: 64px;
-            @media (max-width:769px)
+            margin-bottom: 48px;
+
+            @media (max-width:950px)
             {
-                margin-top: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
+            }
+            
+            .advantage-img-col
+            {
+                flex-basis: 600px;
             }
 
-            .adv-col{
-                flex-basis: 530px;
-                // border: 2px solid black;
+            .advantage-text-col{
+                flex-basis: 580px;
                 text-align: left;
+                padding: 34px 0;
+
+                @media (max-width:950px) {
+                    padding: 0;
+                }
 
                 .avd-icon{
                     width: 74px;
                     height: 74px;
-                    margin-top: 34px;
                     margin-bottom: 24px;
 
                     @media (max-width: 769px)
                     {
                         margin-top: 0px;
-                        width: 60px;
-                        height: 60px;
+                        width: 50px;
+                        height: 50px;
                     }
                 }
 
-                h3{
-                    @include text-style(700,35px,50px,0%);
-                    color: #1F3D32;
-                    margin-bottom: 24px;
-
-                    @media (max-width: 450px)
-                    {
-                    @include text-style(700,25px,30px,0%);
-                    }
-                }
                 .description{
                     position: relative;
                     padding-left: 30px;
+                    margin: 0;
                     &::after{
                         content: "";
                         position: absolute;
@@ -312,27 +268,34 @@
                     }
                 }
             }
+        @media (max-width:1182px)
+        {
+            .advantage-text-col
+            {
+                flex-basis: 450px;
+            }
+            .advantage-img-col
+            {
+                flex-basis: 500px;
+            }
         }
+      }
     }
 }
 
-/**/
 
-.features
+/*Financing-features-section style*/
+
+.financing-features-section
 {
     .container
     {
-        margin-top: 50px;
-        .heading{
-            padding-top: 24px;
-        }
         .tab-scroll-wrapper {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
           }
           
           .nav {
-            margin-top: 64px;
             gap: 10px;
             flex-wrap: nowrap !important;
             white-space: nowrap;
@@ -341,8 +304,8 @@
 
             @media #{$brkmx768}
             {
-                margin-top: 20px;
                 gap: 0px;
+                border-bottom: none;
             }
           }
           
@@ -370,14 +333,12 @@
           {
             justify-content: space-between;
             margin-top: 64px;
-            margin-bottom: 64px;
             align-items: center;
             gap: 15px;
 
             @media (max-width : 769px)
             {
                 margin-top: 10px;
-                margin-bottom: 20px;
             }
             .fea-left
             {
@@ -390,17 +351,6 @@
                     flex-basis: 400px;
                 }
 
-              h2{
-                @include text-style(700,40px,50px,0%);
-                color: $dark-green;
-                margin-bottom: 16px;
-
-                @media (max-width: 1024px)
-                {
-                    @include text-style(700,30px,40px,0%);
-                    margin-bottom: 0px;
-                }
-              }
               .description
               {
                 margin-bottom: 16px;
@@ -441,22 +391,16 @@
                     max-width: 555px;
                     width: 100%;
                     min-height: auto;
-                    // border: 2px solid black;
                 }
             }
-          }
+        }
     }
 }
 
 /*FAQS style*/
 
-.faqs
+.faqs-section
 {
-    margin-top: 160px;
-    @media (max-width : 1298px)
-    {
-        margin-top: 80px;
-    }
     .container
     {
         .faqs-row
@@ -471,8 +415,10 @@
                 .heading
                 {
                     text-align: left;
-                    padding-top: 24px;
-                    margin-bottom: 16px;
+                }
+                .description
+                {
+                    margin-bottom: 0;
                 }
                 @media (max-width : 1298px)
                 {
@@ -541,36 +487,31 @@
                 {
                     margin-left: 50px;   
                     padding-bottom: 24px;
+                    margin-bottom: 0;
                 }
             }
 
             @media (max-width: 1298px) {
                 .faqs-left,
-                .faqs-right {
+                .faqs-right 
+                {
                   flex-basis: 100% !important;
                   max-width: 100%;
                 }
-              }
+            }
         }
     }
 }
 
-.freedom
+.financial-freedom-section
 {
      background-color: #F5FAF6;
-     padding: 80px 0;
 
      @media (max-width :1024px)
      {
         background-color: transparent;
-        padding: 50px 0;
-
      }
 
-     @media (max-width : 425px)
-     {
-        padding: 20px 0;
-     }
     .container{
         background: url('../../../assets/images/freedom-bg.png') no-repeat;
         height: 100%;
@@ -593,6 +534,7 @@
         .freedom-row{
             align-items: center;
             gap: 24px;
+            padding: 24px;
 
             .freedom-left
             {
@@ -604,21 +546,11 @@
                    margin: auto;
                 }
 
-                h2{
-                    @include text-style(700,48px,64px,0%);
+                .single-color-heading
+                {
                     color: #FDFEFD;
-                    margin-bottom: 24px;
-
-                    @media (max-width :769px)
-                    {
-                        @include text-style(700,34px,50px,0%);
-                    }
-
-                    @media (max-width :425px)
-                    {
-                        @include text-style(700,25px,40px,0%);
-                        margin-bottom: 8px;
-                    }
+                    width: 100%;
+                    max-width: 500px;
                 }
                 .description
                 {
@@ -630,7 +562,7 @@
                         margin-bottom: 10px;
                     }
                 }
-                .btn1
+                .btn-green
                 {
                     color: $primary-green;
                     background: #FDFEFD;
