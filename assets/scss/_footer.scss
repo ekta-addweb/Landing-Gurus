@@ -1,9 +1,8 @@
 footer{
-    background-color: #096C25;
+    background-color: $footer-bg;
 
     h5{
         @include text-style(700,18px,24px,0%);
-        text-decoration: underline;
         text-decoration-style: solid;
         text-decoration-thickness: 0%;
         color: $light-grey;
@@ -13,7 +12,7 @@ footer{
         padding-top: 80px;
         margin-bottom: 48px;
 
-        @media (max-width: 425px){
+        @media #{$brkmx425}{
             padding-top: 50px;
             margin-bottom: 28px;
         }
@@ -31,20 +30,15 @@ footer{
         {
             width: 20px;
             height: 20px;
-            border-radius: 50%;
             background-color: $light-grey;
-            color: #096C25;
-            text-align: center;
+            color: $primary-green;
             line-height: 20px;
             font-size: 12px;
-            margin-right: 10px;
         }
     }
     .footer-text
     {
-        text-align: center;
         @include text-style(400,14px,27px,0%);
-        margin-bottom: 24px;
-        color: #FDFEFD;
+        color: $light-white;
     }
 }

@@ -3,10 +3,17 @@
 /* Media Query Break Point START */
 
 $brkmx1400: '(max-width: 1399.98px)';
+$brkmx1298: '(max-width: 1298px)';
 $brkmx1200: '(max-width: 1199.98px)';
+$brkmx1182: '(max-width: 1182px)';
+$brkmx1163: '(max-width: 1163px)';
+$brkmx1068: '(max-width: 1068px)';
+$brkmx1024: '(max-width: 1024px)';
 $brkmx992: '(max-width: 991.98px)';
+$brkmx950: '(max-width: 950.98px)';
 $brkmx768: '(max-width: 767.98px)';
 $brkmx576: '(max-width: 575.98px)';
+$brkmx425: '(max-width: 425px)';
 
 @mixin respond-to($media) {
     @media only screen and #{$media} {
@@ -15,3 +22,5 @@ $brkmx576: '(max-width: 575.98px)';
 }
 
 /* Media Query Break Point END */
+
+

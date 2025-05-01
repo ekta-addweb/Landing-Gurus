@@ -1,6 +1,5 @@
 header
 {
-    padding: 24px 0;
     position: relative;
     z-index: 10000;
     .navbar-brand{
@@ -18,19 +17,22 @@ header
     }
     .navbar-nav
     {
-        .nav-item{
+        .nav-item
+        {
             margin-right: 40px;
             @include text-style(500,18px,20px,0%);
 
-            .nav-link {
+            .nav-link 
+            {
                 transition: background-color 0.4s, color 0.4s;
-              }
+            }
               
-              .nav-link:hover {
-                background: linear-gradient(180deg, #0F8732 0%, #0FB03E 100%);
-                color: white;
+            .nav-link:hover 
+            {
+                background: linear-gradient(180deg, $btn-color 0%, $btn-hover-2 100%);
+                color: $white;
                 border-radius: 10px;
-              }
+            }
               
         }
     }
