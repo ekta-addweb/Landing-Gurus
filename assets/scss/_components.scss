@@ -99,7 +99,7 @@
     .swiper-slide img {
         filter: grayscale(100%);
         transition: filter 0.2s ease-in-out;
-      }
+        }
       
       .swiper-slide:hover img {
         filter: grayscale(0%);
@@ -190,7 +190,6 @@
                 .avd-icon{
                     width: 74px;
                     height: 74px;
-                    margin-bottom: 24px;
 
                     @media #{$brkmx768}
                     {

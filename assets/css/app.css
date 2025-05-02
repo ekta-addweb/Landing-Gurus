@@ -10828,16 +10828,16 @@ img {
 }
 
 /*padding for sections*/
-.section-padding-wapper {
+.section-padding-wrapper {
   padding: 80px 15px;
 }
 @media (max-width: 991.98px) {
-  .section-padding-wapper {
+  .section-padding-wrapper {
     padding: 60px 12px;
   }
 }
 @media (max-width: 575.98px) {
-  .section-padding-wapper {
+  .section-padding-wrapper {
     padding: 40px 10px;
   }
 }
@@ -11225,7 +11225,6 @@ footer .footer-text {
 .unique-advantage-section .container-xxl .advantage-row .advantage-text-col .avd-icon {
   width: 74px;
   height: 74px;
-  margin-bottom: 24px;
 }
 @media (max-width: 767.98px) {
   .unique-advantage-section .container-xxl .advantage-row .advantage-text-col .avd-icon {
